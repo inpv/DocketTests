@@ -1,3 +1,10 @@
+import sys
+from pathlib import Path
+
+# fix for config module imports
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT))
+
 import pytest
 import requests
 from config import config
@@ -9,12 +16,12 @@ from utils.Generate import Generate
 @pytest.fixture
 def user():
     generator = Generate()
-    user = generator.GetUser()
+    user = generator.get_user()
     yield user
 
 @pytest.fixture()
 def token():
     generator = Generate()
-    token = generator.GetToken()
+    token = generator.get_token()
     yield token
     requests.delete(config.SERVER + '/api/Users/', headers={'token': token})
