@@ -1,6 +1,6 @@
 import requests
 import json
-from config import config
+from tests.config import config
 
 
 class Register:

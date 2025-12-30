@@ -1,4 +1,4 @@
-from endpoints.Register import Register
+from tests.endpoints.Register import Register
 
 def test_register_new_user(user):
     # This test registers a new user.

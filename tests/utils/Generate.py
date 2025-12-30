@@ -1,5 +1,5 @@
 from faker import Faker
-from config import config
+from tests.config import config
 import requests
 import json
 

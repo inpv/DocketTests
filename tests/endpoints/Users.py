@@ -1,5 +1,6 @@
 import requests
-from config import config
+from tests.config import config
+
 
 class Users:
     def __init__(self, token):

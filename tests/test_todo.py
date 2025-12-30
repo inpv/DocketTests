@@ -1,4 +1,4 @@
-from endpoints.Todo import Todo
+from tests.endpoints.Todo import Todo
 
 def test_create_todo(user, token):
     # This test creates a new user, creates a new todo_.

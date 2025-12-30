@@ -1,4 +1,4 @@
-from endpoints.Users import Users
+from tests.endpoints.Users import Users
 
 def test_get_all_users(token):
     # This test requests all users from the server.

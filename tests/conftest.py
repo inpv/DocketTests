@@ -7,8 +7,8 @@ sys.path.insert(0, str(REPO_ROOT))
 
 import pytest
 import requests
-from config import config
-from utils.Generate import Generate
+from tests.config import config
+from tests.utils.Generate import Generate
 
 # These fixtures run before the tests and gener the user, and API tokens that are used in the tests.
 # The token fixture also deletes the account associated with the generated token once the test has run.
